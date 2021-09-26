@@ -15,6 +15,7 @@ body a {
 .bar-grids{
 	padding: 6em 5em;
 }
+
 .mid_services_img {
     background: url(../images/banner2.jpg) no-repeat 0px 0px;
     background-size: cover;
@@ -132,6 +133,8 @@ h3.heading.two.three {
 .skill_info {
     margin-top: 4em;
 }
+
+
 /*-- //mid-services --*/
 
 /*-- /skills --*/
