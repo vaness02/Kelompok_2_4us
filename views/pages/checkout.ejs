@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.4US.COM</title>
+    <script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //custom-theme -->
+    <link href="../public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="../public/css/shop.css" type="text/css" media="screen" property="" />
+	<link href="../public/css/style7.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Owl-carousel-CSS -->
+	<link rel="stylesheet" type="text/css" href="../public/css/checkout.css">
+	<link href="../public/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome-icons -->
+	<link href="../public/css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+	    rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+<body>
+    <!-- banner -->
+	<div class="banner_top innerpage" id="home">
+		<div class="wrapper_top">
+			<div class="header_">
+				<div class="logo inner_page_log">
+					<h1><a class="navbar-brand" href="homepage"><span>4US</span> <i>.COM</i></a></h1>
+				</div>
+				<div class="overlay overlay-contentpush">
+					<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    
+                    <%- include('../layouts/navbar.ejs'); %>
+<!-- cart details -->
+				<div class="top_nav_right">
+					<div class="shoecart shoecart2 cart cart box_1">
+						<form action="checkout" method="get" class="last">
+							<input type="hidden" name="cmd" value="_cart">
+							<input type="hidden" name="display" value="1">
+							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //cart details -->
+		
+		<!-- /banner_inner -->
+		<div class="services-breadcrumb">
+			<div class="inner_breadcrumb">
+
+				<ul class="short">
+					<li><a href="homepage">Home</a><i>|</i></li>
+					<li>Check Out</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //banner_inner -->
+	</div>
+
+	<div class="ads-grid_shop">
+		<div class="shop_inner_inf">
+			<div class="privacy about">
+				<h3>Chec<span>kout</span></h3>
+
+				<div class="checkout-right">
+					<h4>Your shopping cart contains: <span>3 Products</span></h4>
+					<table class="timetable_sub">
+						<thead>
+							<tr>
+								<th>SL No.</th>
+								<th>Product</th>
+								<th>Quantity</th>
+								<th>Product Name</th>
+
+								<th>Price</th>
+								<th>Remove</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="rem1">
+								<td class="invert">1</td>
+								<td class="invert-image"><a href="single.html"><img src="https://i.ibb.co/rGfkVH7/s1.jpg" alt=" " class="img-responsive"></a></td>
+								<td class="invert">
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</td>
+								<td class="invert">NIKE AIR FORCE 1 SHADOW PALE IVORY</td>
+
+								<td class="invert">Rp.1</td>
+								<td class="invert">
+									<div class="rem">
+										<div class="close1"> </div>
+									</div>
+
+								</td>
+							</tr>
+							<tr class="rem2">
+								<td class="invert">2</td>
+								<td class="invert-image"><a href="single.html"><img src="https://i.ibb.co/37XTXWT/s5.jpg" alt=" " class="img-responsive"></a></td>
+								<td class="invert">
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</td>
+								<td class="invert">Adidas NMD</td>
+
+								<td class="invert">Rp.1</td>
+								<td class="invert">
+									<div class="rem">
+										<div class="close2"> </div>
+									</div>
+
+								</td>
+							</tr>
+							<tr class="rem3">
+								<td class="invert">3</td>
+								<td class="invert-image"><a href="single.html"><img src="https://i.ibb.co/hCyrKBT/s2.jpg" alt=" " class="img-responsive"></a></td>
+								<td class="invert">
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value"><span>1</span></div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</td>
+								<td class="invert">NIKE AIR FORCE 1 LOW G-DRAGON</td>
+
+								<td class="invert">Rp.1</td>
+								<td class="invert">
+									<div class="rem">
+										<div class="close3"> </div>
+									</div>
+
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="checkout-left">
+					<div class="col-md-4 checkout-left-basket">
+						<h4>Continue to basket</h4>
+						<ul>
+							<li>Product1 <i>-</i> <span>Rp.1 </span></li>
+							<li>Product2 <i>-</i> <span>Rp.1 </span></li>
+							<li>Product3 <i>-</i> <span>Rp.1 </span></li>
+							<li>Total Service Charges <i>-</i> <span>Rp.0,5</span></li>
+							<li>Total <i>-</i> <span>Rp.3,5</span></li>
+						</ul>
+					</div>
+					<div class="col-md-8 address_form">
+						<h4>Add a new Details</h4>
+						<form action="payment" method="get" class="creditly-card-form agileinfo_form">
+							<section class="creditly-wrapper wrapper">
+								<div class="information-wrapper">
+									<div class="first-row form-group">
+										<div class="controls">
+											<label class="control-label">Full name: </label>
+											<input class="billing-address-name form-control" type="text" name="name" placeholder="Full name">
+										</div>
+										<div class="card_number_grids">
+											<div class="card_number_grid_left">
+												<div class="controls">
+													<label class="control-label">Mobile number:</label>
+													<input class="form-control" type="text" placeholder="Mobile number">
+												</div>
+											</div>
+											<div class="card_number_grid_right">
+												<div class="controls">
+													<label class="control-label">Landmark: </label>
+													<input class="form-control" type="text" placeholder="Landmark">
+												</div>
+											</div>
+											<div class="clear"> </div>
+										</div>
+										<div class="controls">
+											<label class="control-label">Town/City: </label>
+											<input class="form-control" type="text" placeholder="Town/City">
+										</div>
+										<div class="controls">
+											<label class="control-label">Address type: </label>
+											<select class="form-control option">
+																							<option>Office</option>
+																							<option>Home</option>
+																							<option>Commercial</option>
+							
+																					</select>
+										</div>
+									</div>
+									<button class="submit check_out"  onclick="address()">Delivery to this Address</button>
+								</div>
+							</section>
+						</form>
+						<div class="checkout-right-basket">
+							<a href="payment">Make a Payment </a>
+						</div>
+					</div>
+
+					<div class="clearfix"> </div>
+
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="mid_slider">
+			<div class="col-md-3 mid_slider_text">
+				<h5>Some More Shoes</h5>
+			</div>
+			<div class="col-md-9 mid_slider_info">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+						<li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+						<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item">
+							<div class="row">
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/sPgyZFz/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/VYBcKRM/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/svrnQ1W/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/86yzfZP/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item active">
+							<div class="row">
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/CMpG0yR/g5.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/HKZZtNb/g6.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/VYBcKRM/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/sPgyZFz/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="../public/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/VYBcKRM/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/svrnQ1W/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/86yzfZP/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/sPgyZFz/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/VYBcKRM/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/svrnQ1W/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+									<div class="thumbnail"><img src="https://i.ibb.co/86yzfZP/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="fa fa-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="fa fa-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+					<!-- The Modal -->
+
+				</div>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+		<!-- /newsletter-->
+		<% if (locals.isLoggedIn) { %>
+
+			<% } else { %>
+		<div class="newsletter">
+			<div class="col-sm-6 newsleft">
+				<h3>Sign up for Newsletter !</h3>
+			</div>
+			<div class="col-sm-6 newsright">
+					<a href="signup"><input type="submit" value="Sign up now"></a>
+				</form>
+			</div>
+			<% } %>
+			<div class="clearfix"></div>
+		</div>
+		<!-- //newsletter-->
+        <%- include('../layouts/footer.ejs'); %>
+</body>
+</html>

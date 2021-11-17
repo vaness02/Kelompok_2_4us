@@ -1,0 +1,29 @@
+{
+  "name": "4us.com",
+  "version": "1.0.0",
+  "description": "website 4us.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagaskara560/Kelompok_2_4us.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bagaskara560/Kelompok_2_4us/issues"
+  },
+  "homepage": "https://github.com/bagaskara560/Kelompok_2_4us#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
