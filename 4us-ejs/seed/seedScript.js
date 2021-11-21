@@ -58,6 +58,7 @@ const products = [
         name: 'Adidas Ultraboost x Lego',
         price: '1'
     }),
+  
 ]
 var done = 0
 for (var i = 0; i < products.length; i++) {

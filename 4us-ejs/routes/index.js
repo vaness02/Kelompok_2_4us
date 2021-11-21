@@ -1,8 +1,7 @@
 const { request, response } = require('express');
 const express = require('express');
-const cart = require('../models/cart');
-const Product = require('../models/product')
-const Cart = require('../models/cart')
+const Product = require('../models/product');
+const user = require('../models/user');
 const router = express.Router()
 
 router.get('/', (request, response) => {
@@ -23,8 +22,8 @@ router.get('/payment', (request, response) => {
 router.get('/contact', (request, response) => {
     response.render('pages/contact');
 })
-router.get('/login', (request, response) => {
-    response.render('pages/login');
+router.get('/signin', (request, response) => {
+    response.render('pages/signin');
 })
 router.get('/signup', (request, response) => {
     response.render('pages/signup');
@@ -33,21 +32,43 @@ router.get('/shop', async (request, response) => {
     var data = await Product.find();
     response.render('pages/shop', {products: data});
 })
-
-router.get('/add-to-cart/:id', function(request, response, next) {
-        var productId = req.params.id;
-        var cart = new cart(req.session.cart ? req.session.cart : {items: {}});
-
-        Product.findById(productId, function(error, product) {
-            if (error) {
-                return response.redirect('/');
-            }
-            cart.add(product, product.id);
-            req.session.cart = cart;
-            console.log(request.session.cart);
-            response.redirect('/')
-        });
+router.get('/tambahdata', (request, response) => {
+    response.render('pages/tambahdata');
+})
+router.get('/Hapusdata', (request, response) => {
+    response.render('pages/Hapusdata');
+})
+router.get('/dashboard',async (request, response) => {
+    var data = await Product.find();
+    response.render('pages/dashboard', {products: data});
+})
+  
+router.get('/EditData/:id', (request, response, next) => {
+    console.log(request.params.id);
+    // res.send(req.params.id);
+    Product.findOneAndUpdate({_id: request.params.id},request.body, { new: true }, (err, shop)=>{
+        console.log(shop);
+        
+        console.log(shop.name);
+        
+        // console.log(docs._id);
+        
+        response.render('pages/EditData', {Product:shop});
+    })
 });
 
+
+router.post('/EditData/:id', (request, response, next) => {
+   
+    
+    Product.findByIdAndUpdate({_id: request.params.id},request.body, (err)=>{
+        if (err) {
+            console.log(err);
+            next(err);
+        } else {
+            response.redirect('/dashboard');
+        }
+    })
+});
 
 module.exports = router;
