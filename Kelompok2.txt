@@ -1,0 +1,9 @@
+KELOMPOK 2: 
+VANNES CHEN 535200052
+MARIO 535200053
+NATHANIEL ANDREW 535200054
+DJORDI BAGASKARA 535200059
+
+LINK GITHUB: https://github.com/bagaskara560/Kelompok_2_4us/tree/master/4us-ejs
+LINK LIVE :https://web4uscom.herokuapp.com/
+LINK DEMO : https://youtu.be/EWsuhsf3Pvs
