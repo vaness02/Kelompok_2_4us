@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.4US.COM</title>
+    <script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	
+	<!-- //custom-theme -->
+	<link href="../public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="../public/css/shop.css" type="text/css" media="screen" property="" />
+	<link href="../public/css/style7.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Owl-carousel-CSS -->
+	<link rel="stylesheet" type="text/css" href="../public/css/signin.css">
+	<link href="../public/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome-icons -->
+	<link href="../public/css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+	    rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+<body>
+    <!-- banner -->
+<div class="banner_top innerpage" id="home">
+    <div class="wrapper_top">
+        <div class="header_">
+            <div class="logo inner_page_log">
+                <h1><a class="navbar-brand" href="homepage"><span>4US</span> <i>.COM</i></a></h1>
+            </div>
+            <div class="overlay overlay-contentpush">
+                <button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                <%- include('../layouts/navbar.ejs'); %>
+                
+                <!-- cart details -->
+				<div class="top_nav_right">
+					<div class="shoecart shoecart2 cart cart box_1">
+						<form action="#" method="post" class="last">
+							<input type="hidden" name="cmd" value="_cart">
+							<input type="hidden" name="display" value="1">
+							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //cart details -->
+	
+		<div class="clearfix"></div>
+		<!-- /banner_inner -->
+		<div class="services-breadcrumb">
+			<div class="inner_breadcrumb">
+
+				<ul class="short">
+					<li><a href="homepage">Home</a><i>|</i></li>
+					<li>Sign Up</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //banner_inner -->
+	</div>
+
+	<!-- //banner -->
+	<div class="ads-grid_shop">
+		<div class="shop_inner_inf">
+			<h3 class="head"> Sign Up </h3>
+			<p class="head_para">Add Some Description</p>
+			<div class="inner_section">
+				<div class="col-md-7 contact_grid_right">
+					<h6>Sign up for news letter </h6>
+					<form action="/user/register" method="post">
+						<div class="col-md-6 col-sm-6 contact_left_grid">
+							<input type="text" name="name" placeholder="User Name ...">
+							<input type="email" name="email" placeholder="Enter your Email ...">
+							<input type="text" name="telephone" placeholder="Telephone">
+                            <input type="password" name="password" placeholder="Password" >
+                            <input type="password" name="confirmpassword" placeholder="Confirm Password">
+
+						</div>
+						<div class="clearfix"> </div>
+						<input type="submit" value="Submit">
+						<% if (locals.error) { %>
+							<span class="text-danger pl-2" style="font-size: 2.2vh;"><%= error %> </span>
+						<% } %> 
+					</form>
+				</div>
+				<div class="col-md-5 contact-left">
+					<h6>Contact Info</h6>
+					<div class="visit">
+						<div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+							<span class="fa fa-home" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+							<h4>Visit us</h4>
+							<p>4US STORE , Jakarta</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="mail-us">
+						<div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+							<span class="fa fa-envelope" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+							<h4>Mail us</h4>
+							<p><a href="mailto:info@example.com">4US@Gmail.com</a></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="call">
+						<div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+							<span class="fa fa-phone" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+							<h4>Call us</h4>
+							<p>+62 123456789</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="visit">
+						<div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+							<span class="fa fa-fax" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+							<h4>Fax</h4>
+							<p>+62 123456789</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	<!-- /newsletter-->
+		<div class="clearfix"></div>
+	</div>
+	<!-- //newsletter-->
+    <%- include('../layouts/footer.ejs'); %>
+	
+</body>
+</html>
